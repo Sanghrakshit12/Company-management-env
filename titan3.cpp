@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 class TITAN
+//     hello lunds
 {
     public:
     string model[10]={"Edge Ceramic  ","Xylys         ","Edge mechanical","Nebula        "}; 
