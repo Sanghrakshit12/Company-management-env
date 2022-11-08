@@ -1,4 +1,4 @@
-#include <iostream>//fuck me
+#include <iostream>
 using namespace std;
 class TITAN
 {
