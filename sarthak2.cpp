@@ -5,28 +5,28 @@ using namespace std;
 class TITAN
 {
     private:
-    string ceo ={"Bhaskar Bhat"};
+    string ceo= "Bhaskar Bhat";
     public:
-    string model[10]={"Edge Ceramic  ","Xylys         ","Edge mechanical","Nebula        "}; 
-    string product_id[20]={"NQ1696KC01","9295DM04  ","1810NP01  ","5033DM01  "};         
-    int code_no[20]={6969,9295,1810,5033};
-    int price[20]={28999,33000,219500,525000};
-    string extra[20]={"UNISEX","MEN","MEN","WOMEN"};
+    
     
     friend void display(TITAN &tt);
-    
 };  
 
 
-      //company logo in terminal  
-        //customize category in which user can custom add with +    
-        //operator overloading
+    //company logo in terminal  
+    //customize category in which user can custom add with +    
+    //operator overloading
     
 class type : public TITAN
 {
     public:
     //analog, digital , chronograph , smart watches
-
+    string model[10]={"Edge Ceramic  ","Xylys         ","Edge mechanical","Nebula        "}; 
+    string product_id[20]={"NQ1696KC01","9295DM04  ","1810NP01  ","5033DM01  "};         
+    int code_no[20]={6969,9295,1810,5033};
+    int price[20]={28999,33000,219500,525000};
+    string extra[20]={"UNISEX","MEN","MEN","WOMEN"};
+    friend void display(type &type);
 };
 class analog : public type{
     public:
@@ -82,11 +82,13 @@ class women : public TITAN
 };
 
 void display(TITAN &tt){
-        for(int t=0; t<4;t++){
-            cout<<tt.code_no[t]<<"\t"<<tt.model[t]<<"\t"<<tt.product_id[t]<<"\t"<<tt.price[t]<<"\t"<<tt.extra[t]<<endl;
-        }
-        
+        cout<<tt.ceo<<endl;
     } 
+void display(type &type){
+    for(int t=0; t<4;t++){
+            cout<<type.code_no[t]<<"\t"<<type.model[t]<<"\t"<<type.product_id[t]<<"\t"<<type.price[t]<<"\t"<<type.extra[t]<<endl;
+        }
+}
 void display(analog &ana){
         for(int t=0; t<3;t++){
             cout<<ana.code_no[t]<<"\t"<<ana.model[t]<<"\t"<<ana.product_id[t]<<"\t"<<ana.price[t]<<"\t"<<ana.extra[t]<<endl;
@@ -127,19 +129,20 @@ void display(women &wo){
 int main(){
     TITAN tt,ttt;
     men m; women wo;
+    type type;
     analog ana; digital digi; chronograph chrono; smart smart;
-    
+    y:
     int choice;
-    cout<<"Enter you choice :\n1. Luxury collection\n2. Type collection\n3. Men's collection\n4. Women's collection\n5. Custom\n6. Exit\nYour choice:";
+    cout<<"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n1. Company details\n2. Type collection\n3. Men's collection\n4. Women's collection\n5. Custom\n6. Exit\nYour choice:";
     cin>>choice;
     switch(choice){
         case 1:
-        cout<<"\t\tYou are in Luxury collection category.\n";
+        cout<<"\t\tAbout:\n CEO of TITAN Watches pvt Lt.= ";
         display(tt);
+        goto y;
         break;
         case 2:
         cout<<"\t\tYou are in Type collection category."<<endl;
-
         char keep;
         m:
         int type_choice;
@@ -172,21 +175,24 @@ int main(){
         if (keep== 'y'){
             goto m;
         }
+        goto y;
         break;
 
         case 3:
         cout<<"\t You are in Men's collection category.\n";
         display(m);
+        goto y;
         break;
 
         case 4:
         cout<<"\t You are in Women's collection category.\n";
         display(wo);
+        goto y;
         break;
 
         case 5:
         cout<<"\t\tCustomization category.\n";
-        
+        goto y;
 
         break;
         case 6:
@@ -195,7 +201,9 @@ int main(){
         break;
 
         default:
-        cout<<"invalid"<<endl;
+        cout<<"Invalid"<<endl;
+        goto y;
+        break;
     }
     return 0;
 }
