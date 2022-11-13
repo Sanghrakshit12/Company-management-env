@@ -2,7 +2,10 @@
 #include <fstream>
 #include <conio.h>
 #include <stdlib.h>
-#include <iomanip> 
+#include <iomanip>
+#include "samendra.h" 
+//#include "sarthak.h"
+//#include "sanghrakshit.h"
 using namespace std;
 
 int main(){
@@ -12,7 +15,7 @@ int main(){
     cin >> choice;
     switch(choice){
         case 1:
-        //motors();
+        motors();
         break;
         case 2:
         //watches();
