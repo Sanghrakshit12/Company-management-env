@@ -231,7 +231,7 @@ void bill2(){
   cout << "\n   You are advised to pay up the amount before due date.\n\n   Have a nice day......" << endl;
 }
 
-int main(){
+int motors(){
   personal tiago("Tiago",26.49,1199,"Petrol/CNG",5.40,935,5);
   personal altroz("Altroz",23.03,1497,"Diesel",6.30,980,5);
   personal tigor("Tigor",26.49,1199,"CNG",6.00,992,5);
@@ -247,7 +247,7 @@ int main(){
   string strt;
   string strg;
 
-  cout << "\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////" << endl;
+  cout << "\n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n" << endl;
   cout << setw(75) << "WELCOME TO TATA MOTORS" << endl;
   int c=0;
   do{
