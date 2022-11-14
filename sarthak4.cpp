@@ -333,7 +333,7 @@ y:
 
         case 1:
             system("cls");
-            ttt->printClass(); // accessing virtual function
+            //ttt->printClass(); // accessing virtual function
             cout << "Analog watches :\n"
                  << endl;
             display(ana);
