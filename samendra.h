@@ -6,11 +6,10 @@
     a) Function Overloading
     b) Operator Overloading
   4. Inline Functions
-  5. Pure Virtual Functions
+  5. Virtual Functions
   6. Constructors
   7. Friend Functions
-  8. Abstract class
-  9. File Handling
+  8. File Handling
   */
 
 #include <iostream>
