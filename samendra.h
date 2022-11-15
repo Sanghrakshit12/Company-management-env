@@ -617,14 +617,14 @@ int motors(){
       break;
 
       case 3://About
-      cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
+      cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -" << endl;
       cout << "| Company name   |  TATA Motors Ltd                |" << endl;
       cout << "| Chairperson    |  Natarajan Chandrasekaran       |" << endl;
       cout << "| Founder        |  Jehangir Ratanji Dadabhoy Tata |" << endl;
       cout << "| Founded in     |  1945                           |" << endl;
       cout << "| Parent Company |  The TATA Group                 |" << endl;
       cout << " \nTata Motors Group (Tata Motors) is a $37 billion organisation. It is a leading global automobile\nmanufacturing company. Its diverse portfolio includes an extensive range of cars, sports utility vehicles, trucks,\nbuses and defence vehicles. Tata Motors is one of India's largest OEMs offering an extensive range of integrated,\nsmart and e-mobility solutions" << endl;
-      cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
+      cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -" << endl;
       break;
 
       case 4://Exit
