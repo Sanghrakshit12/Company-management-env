@@ -244,7 +244,7 @@ void bill(){
     cout << "Enter your mobile no: ";
     cin >> mnum;
     fstream fio;
-    fio.open("customer.txt",ios::out);
+    fio.open("customer_motors.txt",ios::out);
     fio << name << endl;
     fio << mnum << endl;
     fio.close();
