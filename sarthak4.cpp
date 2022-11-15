@@ -71,6 +71,24 @@ public:
     friend void bill(chronograph &chrono);
     
 };
+class watches
+{
+    private :
+    string cname;
+    public:
+    watches(){
+        cname="Watches";
+        cout<<cname<<endl;
+    }
+    void showname(){
+        cname="Titan : A TATA product.";
+        cout<<" \n" <<cname<< endl;
+    }
+    ~watches(){
+        
+    }
+};
+
 class smart : public type
 {
 public:
@@ -81,6 +99,8 @@ public:
     string extra[20] = {"UNISEX", "UNISEX", "UNISEX"};
     friend void bill(smart &smart);
     friend void operator+(smart &smart);
+
+    
 };
 class men : public TITAN
 {
@@ -303,10 +323,12 @@ int main()
     digital digi;
     chronograph chrono;
     smart smart;
-
+    watches watch;
 y:
     system("cls");
     int choice;
+    watches();
+    watch.showname();
     cout << "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n1. Company details\n2. Type collection\n3. Men's collection\n4. Women's collection\n5. Exit\nYour choice:";
     cin >> choice;
     switch (choice)
